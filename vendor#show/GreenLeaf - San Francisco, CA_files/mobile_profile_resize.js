@@ -2,23 +2,23 @@
   var swap_columns_form_page, swap_columns_vendor_page;
 
   $(document).ready(function() {
-    runColumnCheck();
+    runColumnUpdate();
   });
 
   $(window).onload(function() {
-    runColumnCheck();
+    runColumnUpdate();
   });
 
   $(window).resize((function() {
-    runColumnCheck();
+    runColumnUpdate();
   }));
 
-  function runColumnCheck(){
+  function runColumnUpdate(){
     if ($('#vendor_profile').length) {
       swap_columns_vendor_page();
     }
     if ($('#form-page').length) {
-      return swap_columns_form_page();
+      swap_columns_form_page();
     }
   }
 
@@ -26,9 +26,14 @@
     var $width;
     $width = window.innerWidth;
     if ($width < 760) {
-      return $('.right-column').insertBefore('.vendor-directory-left.pull-left');
+      $('.right-column').insertBefore('.vendor-directory-left.pull-left');
+      $('#search-group form').css('display', 'block');
+      // $('#search-group').css('z-index', '1000000000');
+      // $('#search-group').css('height', '100px');
+      // $('#search-group').css('width', '300px');
     } else {
-      return $('.vendor-directory-left.pull-left').insertBefore('.right-column');
+      $('.vendor-directory-left.pull-left').insertBefore('.right-column');
+      //$('#search-group').css('margin-top', '0px');
     }
   };
 
@@ -36,9 +41,9 @@
     var $width;
     $width = window.innerWidth;
     if ($width < 660) {
-      return $('.right-column').insertBefore('.left-column');
+      $('.right-column').insertBefore('.left-column');
     } else {
-      return $('.left-column').insertBefore('.right-column');
+      $('.left-column').insertBefore('.right-column');
     }
   };
 
