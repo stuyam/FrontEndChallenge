@@ -1,32 +1,26 @@
 (function() {
   var swap_columns_form_page, swap_columns_vendor_page;
 
-  $(document).ready(function(e) {
-    if ($('#vendor_profile').length) {
-      swap_columns_vendor_page();
-    }
-    if ($('#form-page').length) {
-      return swap_columns_form_page();
-    }
+  $(document).ready(function() {
+    runColumnCheck();
   });
 
-  $(window).onload(function(e) {
-    if ($('#vendor_profile').length) {
-      swap_columns_vendor_page();
-    }
-    if ($('#form-page').length) {
-      return swap_columns_form_page();
-    }
+  $(window).onload(function() {
+    runColumnCheck();
   });
 
-  $(window).resize((function(e) {
-    if ($('#vendor_profile').length) {
-      swap_columns_vendor_page();
-    }
-    if ($('#form-page').length) {
-      return swap_columns_form_page();
-    }
+  $(window).resize((function() {
+    runColumnCheck();
   }));
+
+  function runColumnCheck(){
+    if ($('#vendor_profile').length) {
+      swap_columns_vendor_page();
+    }
+    if ($('#form-page').length) {
+      return swap_columns_form_page();
+    }
+  }
 
   swap_columns_vendor_page = function() {
     var $width;
