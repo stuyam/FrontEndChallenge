@@ -28,12 +28,10 @@
     if ($width < 760) {
       $('.right-column').insertBefore('.vendor-directory-left.pull-left');
       $('#search-group form').css('display', 'block');
-      // $('#search-group').css('z-index', '1000000000');
-      // $('#search-group').css('height', '100px');
-      // $('#search-group').css('width', '300px');
+      $('#search-group').addClass('search-group-mobile');
     } else {
       $('.vendor-directory-left.pull-left').insertBefore('.right-column');
-      //$('#search-group').css('margin-top', '0px');
+      $('#search-group').removeClass('search-group-mobile');
     }
   };
 
