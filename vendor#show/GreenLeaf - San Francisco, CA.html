@@ -133,48 +133,63 @@
   <div class="clearfix">
     <a class="icon sourcery-logo pull-left " data-track_click="[VendorDirectoryNavigation] View Directory" data-track_data="{&quot;section&quot;:&quot;vendor-directory-navigation&quot;}" href="http://localhost:3000/directory/categories" style="margin-left: 0px;">Logo</a>
     <div class="pull-left ui-divider"></div>
-    <!-- <button class="btn pull-left"><i class="search"></i></button> -->
-    <div class="pull-left" id="search-group"><form accept-charset="UTF-8" action="http://localhost:3000/leads" method="post" style="margin: 0px;"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="ymgN69NuOtQ6D2F3LEtPV6GYhDwzg9WoUhp5/dOuWLc="></div>
-            <input type="hidden" name="redirect_to" value="/directory/search"><input type="hidden" name="lead[category]" value="browse"><select id="browsevendors" name="lead[lead_data][product_category]" data-track_change="[BrowseByZipCode] Select a category" data-track_data="{&quot;section&quot;:&quot;header&quot;}" required="">
-              <option value="">
-                Browse vendors by category
-              </option>
-              <option value="bakery">
-                Bakery
-              </option><option value="beverage">
-                Beverage
-              </option><option value="broadliner">
-                Broadliner
-              </option><option value="candy">
-                Candy
-              </option><option value="cleaning">
-                Cleaning
-              </option><option value="dairy">
-                Dairy
-              </option><option value="dry-goods">
-                Dry Goods
-              </option><option value="equipment">
-                Equipment
-              </option><option value="frozen">
-                Frozen
-              </option><option value="grains">
-                Grains
-              </option><option value="meat">
-                Meat
-              </option><option value="mushrooms">
-                Mushrooms
-              </option><option value="packaging">
-                Packaging
-              </option><option value="produce">
-                Produce
-              </option><option value="seafood">
-                Seafood
-              </option><option value="specialty">
-                Specialty
-              </option></select><input id="zipcode" type="number" pattern="\d{5}" name="lead[lead_data][zip_code]" required="" placeholder="Zipcode" data-track_change="[BrowseByZipCode] Enter a Zipcode" data-track_data="{&quot;section&quot;:&quot;header&quot;}"><button class="btn" type="submit" value="" data-track_click="[BrowseByZipCode] BrowseByZipCode" required="" data-track_data="{&quot;controller&quot;:&quot;vendors&quot;,&quot;action&quot;:&quot;show&quot;,&quot;section&quot;:&quot;header&quot;}"><i class="search"></i></button></form>
+    <div class="pull-left" id="search-group">
+      <form accept-charset="UTF-8" action="http://localhost:3000/leads" method="post" style="margin: 0px;">
+        <div style="display:none">
+          <input name="utf8" type="hidden" value="✓">
+          <input name="authenticity_token" type="hidden" value="ymgN69NuOtQ6D2F3LEtPV6GYhDwzg9WoUhp5/dOuWLc=">
+        </div>
+        <input type="hidden" name="redirect_to" value="/directory/search">
+        <input type="hidden" name="lead[category]" value="browse">
+        <select id="browsevendors" name="lead[lead_data][product_category]" data-track_change="[BrowseByZipCode] Select a category" data-track_data="{&quot;section&quot;:&quot;header&quot;}" required="">
+          <option value="">
+            Browse vendors by category
+          </option>
+          <option value="bakery">
+            Bakery
+          </option><option value="beverage">
+            Beverage
+          </option><option value="broadliner">
+            Broadliner
+          </option><option value="candy">
+            Candy
+          </option><option value="cleaning">
+            Cleaning
+          </option><option value="dairy">
+            Dairy
+          </option><option value="dry-goods">
+            Dry Goods
+          </option><option value="equipment">
+            Equipment
+          </option><option value="frozen">
+            Frozen
+          </option><option value="grains">
+            Grains
+          </option><option value="meat">
+            Meat
+          </option><option value="mushrooms">
+            Mushrooms
+          </option><option value="packaging">
+            Packaging
+          </option><option value="produce">
+            Produce
+          </option><option value="seafood">
+            Seafood
+          </option><option value="specialty">
+            Specialty
+          </option>
+        </select>
+        <input id="zipcode" type="number" pattern="\d{5}" name="lead[lead_data][zip_code]" required="" placeholder="Zipcode" data-track_change="[BrowseByZipCode] Enter a Zipcode" data-track_data="{&quot;section&quot;:&quot;header&quot;}">
+        <button class="btn" type="submit" value="" data-track_click="[BrowseByZipCode] BrowseByZipCode" required="" data-track_data="{&quot;controller&quot;:&quot;vendors&quot;,&quot;action&quot;:&quot;show&quot;,&quot;section&quot;:&quot;header&quot;}">
+          <i class="search"></i>
+        </button>
+      </form>
     </div>
     <div class="pull-right call-link">
       <a href="tel:+18004105164"><i class="icon telephone"></i>Call 1 (800) 410-5164 </a>
+    </div>
+    <div class="pull-right" id="open-search">
+      <img src="stu-assets/search.png" id="search-opener-icon">
     </div>
   </div>
 </div>

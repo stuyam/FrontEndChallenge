@@ -23,3 +23,15 @@
 	margin-right: 5%;
 	float: right;
 }
+
+#search-opener-icon{
+	height: 26px;
+	width: 26px;
+}
+
+#open-search{
+	padding: 14px;
+	border-left: 1px solid #ecf0f1;
+	background: white;
+	cursor: pointer;
+}

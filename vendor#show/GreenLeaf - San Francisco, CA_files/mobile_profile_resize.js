@@ -12,7 +12,7 @@
   $(window).resize((function() {
     runColumnUpdate();
   }));
-
+  
   function runColumnUpdate(){
     if ($('#vendor_profile').length) {
       swap_columns_vendor_page();
@@ -29,9 +29,11 @@
       $('.right-column').insertBefore('.vendor-directory-left.pull-left');
       $('#search-group form').css('display', 'block');
       $('#search-group').addClass('search-group-mobile');
+      $('#open-search').show();
     } else {
       $('.vendor-directory-left.pull-left').insertBefore('.right-column');
       $('#search-group').removeClass('search-group-mobile');
+      $('#open-search').hide();
     }
   };
 
