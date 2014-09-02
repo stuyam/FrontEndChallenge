@@ -3,6 +3,9 @@
 
   $(document).ready(function() {
     runColumnUpdate();
+    $('#open-search').click(function(){
+      $('#search-group').toggle();
+    });
   });
 
   $(window).onload(function() {
@@ -12,7 +15,7 @@
   $(window).resize((function() {
     runColumnUpdate();
   }));
-  
+
   function runColumnUpdate(){
     if ($('#vendor_profile').length) {
       swap_columns_vendor_page();
@@ -29,10 +32,12 @@
       $('.right-column').insertBefore('.vendor-directory-left.pull-left');
       $('#search-group form').css('display', 'block');
       $('#search-group').addClass('search-group-mobile');
+      $('#search-group').hide();
       $('#open-search').show();
     } else {
       $('.vendor-directory-left.pull-left').insertBefore('.right-column');
       $('#search-group').removeClass('search-group-mobile');
+      $('#search-group').show();
       $('#open-search').hide();
     }
   };
