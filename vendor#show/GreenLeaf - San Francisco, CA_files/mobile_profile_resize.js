@@ -6,14 +6,14 @@
 
     //click the search to open light box
     $('#open-search').click(function(){
-      $('#light-box-search-bg').show();
-      $('#search-group').show();
+      $('#light-box-search-bg').fadeIn();
+      $('#search-group').fadeIn();
     });
 
     //click the "x" to close the light box
     $('#light-box-search-bg span').click(function(){
-      $('#light-box-search-bg').hide();
-      $('#search-group').hide();
+      $('#light-box-search-bg').fadeOut();
+      $('#search-group').fadeOut();
     });
   });
 

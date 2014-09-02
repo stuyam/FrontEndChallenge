@@ -8,14 +8,13 @@
 	opacity: .9;
 	z-index: 1000000000;
 	display: none;
-	padding: 10px;
 }
 
 #light-box-search-bg span{
 	color: #344a5f;
 	font-size: 40px;
 	display: block;
-	padding: 7px 20px 20px 12px;
+	padding: 17px 20px 20px 22px;
 	font-weight: 100;
 	cursor: pointer;
 }
@@ -25,25 +24,24 @@
 	z-index: 100000000000;
 	width: 100%;
 	top: 20%;
+	padding: 5%;
 }
 
 .search-group-mobile button{
 	width: 90%;
 	display: block;
-	margin: 10px auto 0px auto;
+	margin-bottom: 10px;
 }
 
 .search-group-mobile select{
 	width: 90%;
 	display: block;
-	margin: auto;
-	margin-left: 10px;
+	margin-bottom: 10px;
 }
 
 .search-group-mobile #zipcode{
-	width: 84%;
-	display: block;
-	margin: 10px auto 0px auto;
+	width: 83%;
+	margin-bottom: 10px;
 }
 
 #search-opener-icon{
