@@ -28,9 +28,8 @@
         $("#body").animate({
           marginTop: "100px"
         }, 250, function() {
-          // Animation complete.
+          $('#open-search').css('padding-bottom', '15px');
         });
-        $('#open-search').delay(200).css('padding-bottom', '15px');
       }
     });
   });
