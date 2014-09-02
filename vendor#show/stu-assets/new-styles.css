@@ -1,8 +1,29 @@
+#light-box-search-bg{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: black;
+	opacity: .7;
+	z-index: 9999999999999999999;
+}
+
+#light-box-search-bg span{
+	color: white;
+	font-size: 40px;
+	display: block;
+	padding: 20px;
+	font-weight: 100;
+	cursor: pointer;
+}
+
 .search-group-mobile{
-	position: absolute;
+	position: absolute !important;
 	width: 100%;
-	top: 40px;
-	background: white;
+	top: 80px;
+	bottom: 0px;
+	background: black;
 	padding: 10px 0px;
 	border-top: 1px solid #ecf0f1;
 }
@@ -33,5 +54,5 @@
 	padding: 14px;
 	border-left: 1px solid #ecf0f1;
 	background: white;
-	cursor: pointer;
+	cursor: 
 }
