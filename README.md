@@ -8,9 +8,7 @@ I built two options using css and tapped into the current js implimentation to s
 ####Option 1 (master branch)
 This option adds a search button next to the phone button. When you tap it, it displays the search options under the nav bar. The advantage to this is that it is not ver invasive to the screen, and it is only there if you need it.
 
-<div style="float:left;">
-![Screenshot1](screenshots/1.png)
-</div>
+->![Screenshot1](screenshots/1.png)<-
 <div style="float:right;">
 ![Screenshot2](screenshots/2.png)
 </div>
