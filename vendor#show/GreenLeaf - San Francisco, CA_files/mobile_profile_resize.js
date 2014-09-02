@@ -19,9 +19,11 @@
   function runColumnUpdate(){
     if ($('#vendor_profile').length) {
       swap_columns_vendor_page();
+      return;
     }
     if ($('#form-page').length) {
       swap_columns_form_page();
+      return;
     }
   }
 

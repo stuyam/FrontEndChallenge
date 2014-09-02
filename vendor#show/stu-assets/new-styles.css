@@ -35,3 +35,11 @@
 	background: white;
 	cursor: pointer;
 }
+
+#vendor_profile .vendor-directory-profile-header.vertical{
+  background: url(http://sourcery-static-images.s3.amazonaws.com/produce-vendor-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
