@@ -3,6 +3,9 @@ FrontEndChallenge
 
 Sourcery front end developer challenge
 
+###Update: 
+I added a 3rd branch called "master-with-animation" which is almost the same as option 1 however is slide the content down and is animated for a little better UX
+
 I built two options using css and tapped into the current js implimentation to show and hide certian parts of the search depending on the size of the screen.
 
 ####Option 1 (master branch)
