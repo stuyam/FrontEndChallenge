@@ -1,10 +1,17 @@
+.vendor-directory-navigation.responsive-nav, .vendor-directory-navigation.responsive-nav .clearfix{
+	z-index: 1000000 !important;
+	background: white !important;
+	height: 54px;
+}
+
 .search-group-mobile{
 	position: absolute;
 	width: 100%;
-	top: 40px;
+	top: -58px;
 	background: white;
 	padding: 10px 0px;
 	border-top: 1px solid #ecf0f1;
+	z-index: -100000;
 }
 
 .search-group-mobile button{
@@ -37,7 +44,7 @@
 }
 
 #vendor_profile .vendor-directory-profile-header.vertical{
-  background: url(http://sourcery-static-images.s3.amazonaws.com/produce-vendor-background.jpg) no-repeat center center fixed; 
+  background: url(http://sourcery-static-images.s3.amazonaws.com/produce-vendor-background.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
