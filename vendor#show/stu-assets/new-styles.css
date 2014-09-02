@@ -4,28 +4,27 @@
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	background: black;
-	opacity: .7;
-	z-index: 9999999999999999999;
+	background: white;
+	opacity: .9;
+	z-index: 1000000000;
+	display: none;
+	padding: 10px;
 }
 
 #light-box-search-bg span{
-	color: white;
+	color: #344a5f;
 	font-size: 40px;
 	display: block;
-	padding: 20px;
+	padding: 7px 20px 20px 12px;
 	font-weight: 100;
 	cursor: pointer;
 }
 
 .search-group-mobile{
-	position: absolute !important;
+	position: fixed;
+	z-index: 100000000000;
 	width: 100%;
-	top: 80px;
-	bottom: 0px;
-	background: black;
-	padding: 10px 0px;
-	border-top: 1px solid #ecf0f1;
+	top: 20%;
 }
 
 .search-group-mobile button{
@@ -35,14 +34,16 @@
 }
 
 .search-group-mobile select{
-	width: 60%;
-	margin-left: 5%;
+	width: 90%;
+	display: block;
+	margin: auto;
+	margin-left: 10px;
 }
 
 .search-group-mobile #zipcode{
-	width: 20%;
-	margin-right: 5%;
-	float: right;
+	width: 84%;
+	display: block;
+	margin: 10px auto 0px auto;
 }
 
 #search-opener-icon{
@@ -54,5 +55,5 @@
 	padding: 14px;
 	border-left: 1px solid #ecf0f1;
 	background: white;
-	cursor: 
+	cursor: pointer;
 }

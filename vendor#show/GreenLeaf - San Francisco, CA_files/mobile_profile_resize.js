@@ -3,8 +3,17 @@
 
   $(document).ready(function() {
     runColumnUpdate();
+
+    //click the search to open light box
     $('#open-search').click(function(){
-      $('#search-group').toggle();
+      $('#light-box-search-bg').show();
+      $('#search-group').show();
+    });
+
+    //click the "x" to close the light box
+    $('#light-box-search-bg span').click(function(){
+      $('#light-box-search-bg').hide();
+      $('#search-group').hide();
     });
   });
 
@@ -34,11 +43,13 @@
       $('#search-group').addClass('search-group-mobile');
       $('#search-group').hide();
       $('#open-search').show();
+      $('#light-box-search-bg').hide();
     } else {
       $('.vendor-directory-left.pull-left').insertBefore('.right-column');
       $('#search-group').removeClass('search-group-mobile');
       $('#search-group').show();
       $('#open-search').hide();
+      $('#light-box-search-bg').hide();
     }
   };
 
